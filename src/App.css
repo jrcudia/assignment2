@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  height: 220px;
+  border-bottom: 7px solid rgb(255, 184, 52);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-item1 {
+  flex: 1 0 550px;
+  padding-left: 50px;
+  padding-top: 70px;
 }
+
+.header p {
+  margin: 0;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.occupation {
+  font-size: 22px;
+}
+
+.header-item2 {
+  flex: 1 0 200px;
+  padding-top: 70px;
+}
+
+.header-item2 p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.personal-profile {
+  display: flex;
+  margin: 20px 50px 0px 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.personal-profile-item1 {
+  flex: 1 0 180px;
+  font-style: italic;
+}
+
+.personal-profile-item2 {
+  flex: 1 0 500px;
+}
+
+.work-experience {
+  display: flex;
+  margin: 20px 50px 0px 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.work-experience-item1 {
+  flex: 1 0 180px;
+  font-style: italic;
+}
+
+.work-experience-item2 {
+  flex: 1 0 500px;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.work-experience-item2 h4 {
+  padding-bottom: 10px;
+}
+
+.key-skills {
+  display: flex;
+  margin: 20px 50px 0px 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.key-skills-item1 {
+  flex: 1 0 180px;
+  font-style: italic;
+}
+
+.key-skills-item2 {
+  display: flex;
+  flex: 1 0 500px;
+  gap: 40px;
+}
+
+.education {
+  display: flex;
+  margin: 20px 50px 0 50px;
+  padding-bottom: 30px;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.education * {
+  padding-bottom: 5px;
+}
+
+.education-item1 {
+  flex: 1 0 180px;
+  font-style: italic;
+}
+
+.education-item2 {
+  flex: 1 0 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
