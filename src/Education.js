@@ -9,16 +9,16 @@ class Education extends Component {
                 </div>
                 <div class="education-item2">
                     <div class="school1">
-                        <h4>New Jersey Institute of Technology</h4>
-                        <p>BS in Computer Science</p>
-                        <p>2018 - 2022</p>
-                        <p>GPA: 3.9</p>
+                        <h4>{this.props.school1.name}</h4>
+                        <p>{this.props.school1.degree}</p>
+                        <p>{this.props.school1.startDate} - {this.props.school1.endDate}</p>
+                        <p>GPA: {this.props.school1.gpa}</p>
                     </div>
                     <div class="school2">
-                        <h4>New Jersey Institute of Technology</h4>
-                        <p>MS in Data Science</p>
-                        <p>2022 - 2023</p>
-                        <p>GPA: 4.0</p>
+                        <h4>{this.props.school2.name}</h4>
+                        <p>{this.props.school2.degree}</p>
+                        <p>{this.props.school2.startDate} - {this.props.school2.endDate}</p>
+                        <p>GPA: {this.props.school2.gpa}</p>
                     </div>
                 </div>
             </div>

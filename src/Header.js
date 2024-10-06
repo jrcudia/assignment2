@@ -6,15 +6,15 @@ class Header extends Component {
             <div className="header">
                 <div class="header-item1">
                     <div>
-                        <p class="name">Zh Rimel</p>
-                        <p class="occupation">Data Scientist</p>
+                        <p class="name">{this.props.personInfo.name}</p>
+                        <p class="occupation">{this.props.personInfo.occupation}</p>
                     </div>
                 </div>
                 <div class="header-item2">
                     <div>
-                        <p>Email: <a href="mailto:rimel@mail.com">abc@gmail.com</a></p>
-                        <p>Web: abc@github.io/abc</p>
-                        <p>Mobile: 01234567890</p>
+                        <p>Email: <a href={`mailto:${this.props.contactInfo.email}`}>{this.props.contactInfo.email}</a></p>
+                        <p>Web: {this.props.contactInfo.web}</p>
+                        <p>Mobile: {this.props.contactInfo.mobile}</p>
                     </div>
                 </div>
             </div>

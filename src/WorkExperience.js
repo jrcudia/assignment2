@@ -9,22 +9,12 @@ class WorkExperience extends Component {
                 </div>
                 <div class="work-experience-item2">
                     <div class="job1">
-                        <h4>Job Title at Company (August 2022 - December 2023)</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                        <h4>{this.props.job1.title} at {this.props.job1.company} ({this.props.job1.startDate} - {this.props.job1.endDate})</h4>
+                        <p>{this.props.job1.description}</p>
                     </div>
                     <div class="job2">
-                        <h4>Job Title 2 at Company 2 (August 2020 - December 2021)</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                        <h4>{this.props.job2.title} at {this.props.job2.company} ({this.props.job2.startDate} - {this.props.job2.endDate})</h4>
+                        <p>{this.props.job2.description}</p>
                     </div>
                 </div>
             </div>
